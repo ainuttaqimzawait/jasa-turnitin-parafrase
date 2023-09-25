@@ -9,9 +9,17 @@ import WhatsApp from '../WhatsApp';
 function TopBar() {
     return (
         <div>
-            <Navbar expand="sm" className="bg-body-tertiary mb-3" style={{ position: "fixed", width: "100vw" }}>
+            <Navbar expand="sm" className="bg-body-tertiary mb-3" style={{ position: "fixed", width: "100vw", zIndex:" 999"}}>
                 <Container fluid>
-                    <Navbar.Brand href="#">Turnitin.id</Navbar.Brand>
+                    <Navbar.Brand href="#">
+                    <img
+              src="Screenshot_2023-09-10-18-01-40-176_com.android.chrome-edit-removebg-preview.png"
+              width="150px"
+              height="100px"
+              className="d-inline-block align-top"
+              alt="" style={{margin:"-30px 0px -30px 0px"}}
+            />
+            </Navbar.Brand>
                     <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-expand`} />
                     <Navbar.Offcanvas
                         id={`offcanvasNavbar-expand-expand`}
@@ -20,7 +28,7 @@ function TopBar() {
                     >
                         <Offcanvas.Header closeButton>
                             <Offcanvas.Title id={`offcanvasNavbarLabel-expand-expand`}>
-                                Offcanvas
+                                Jasa_turnitin.id
                             </Offcanvas.Title>
                         </Offcanvas.Header>
                         <Offcanvas.Body>
