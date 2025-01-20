@@ -1,35 +1,27 @@
-// import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import "./tailwind.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
+// import './App.css';
 import TopBar from './components/TopBar';
-import Footer from './pages/Footer';
-import PaketHarga from './pages/Harga';
-import Home from './pages/Home';
-import Layanan from './pages/Layanan';
-import Testimony from './pages/Testimoni';
+import Heroes from './components/Heroes';
+import Layanan from './components/Layanan';
+import Reason from './components/Reason';
+import Pemesanan from './components/Pemesanan';
+import FAQ from './components/FAQ';
+import Testimonial from './components/Testimonial';
+import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App text-center">
       <TopBar />
-      <Home />
+      <Heroes />
       <Layanan />
-      <PaketHarga />
-      <Testimony />
+      <Reason />
+      <Pemesanan />
+      <Testimonial />
+      <FAQ />
       <Footer />
-      {/* <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header> */}
     </div>
   );
 }
